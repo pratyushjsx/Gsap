@@ -1,0 +1,45 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    color: white;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+}
+nav h1{
+    font-size: 3.5rem;
+    font-weight: 400;
+}
+nav h1::first-letter{
+    color: brown;
+}
+.side ul{
+    display: flex;
+    gap: 5rem;
+}
+.side ul li{
+    text-decoration: none;
+    list-style: none;
+    font-size: 1.4em;
+}
+.side ul li:nth-child(even)::first-letter{
+    color: rgb(187, 45, 35);
+}
+.main{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+.main h1{
+    font-size: 80px;
+}
